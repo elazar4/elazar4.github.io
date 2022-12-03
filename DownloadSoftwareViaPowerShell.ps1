@@ -34,7 +34,7 @@ $IriunWebcam = "Iriun.IriunWebcam"
 #>
 
 New-Item "C:\a1" -itemType Directory
-$URL="https://github.com/elazar4/elazar4.github.io/blob/main/aa1.zip"
+$URL="https://github.com/elazar4/elazar4.github.io/raw/main/aa1.zip"
 $PATH="C:\a1\aa1.zip"
 Invoke-WebRequest -URI $URL -OutFile $Path
 Expand-Archive C:\a1\aa1.zip -DestinationPath C:\a1
