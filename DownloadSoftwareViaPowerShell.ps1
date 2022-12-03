@@ -32,6 +32,19 @@ $Grammarly = "Grammarly.Grammarly"
 $7zip = "7zip.7zip"
 $IriunWebcam = "Iriun.IriunWebcam"
 #>
+
+New-Item "C:\a1" -itemType Directory
+$URL="https://github.com/elazar4/elazar4.github.io/blob/main/aa1.zip"
+$PATH="C:\a1\aa1.zip"
+Invoke-WebRequest -URI $URL -OutFile $Path
+Expand-Archive C:\a1\aa1.zip -DestinationPath C:\a1
+Add-AppPackage -path "C:\a1\Microsoft.UI.Xaml.2.7.Appx"
+Add-AppPackage -path "C:\a1\Microsoft.VCLibs.140.00.Appx"
+Add-AppPackage -path "C:\a1\Microsoft.VCLibs.140.00.UWPDesktope.Appx"
+Add-AppPackage -path "C:\a1\AppInstaller1.Msixbundle"
+
+
+
 $namesSoftware = @("Winrar", "Zoom", "Everything", "Chrome", "IDM", "Notepad++", "TeamViewer", "VLC", "Format Factory", "HP Smart",
 "PDF XChange PRO", "Bluej", "Intellij", "Visual Studio Code", "Visual Studio Community 2022", "PyCharm", "Brave", "Tor Browser", "ProtonVpn",
 "Virtual Box", "VM Ware Workstation Pro", "Spotify", "Telegram", "Google Drive", "Grammarly", "7zip", "Iriun Webcam")
